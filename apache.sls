@@ -5,4 +5,4 @@ install_apache:
 start_apache:
   service.running:
     - name: apache2
-    - enabled: True
+    - enable: True
