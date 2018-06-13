@@ -4,4 +4,4 @@ install_apache:
 
 start_apache:
   service.running:
-    name: apache2
+    - name: apache2
