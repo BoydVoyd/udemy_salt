@@ -12,4 +12,4 @@ welcome_page:
     - name: /var/www/html/index.html
     - contents: |
       <!doctype html>
-      <body><h1>Hello World!</h1></body>
+ #     <body><h1>Hello World!</h1></body>
