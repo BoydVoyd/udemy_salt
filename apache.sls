@@ -2,14 +2,14 @@ install_apache:
   pkg.installed:
     {% if salt.grains.get('os_famil') == 'Debian' %}
     - name: apache2
-    {% if salt.grains.get('os_famil') == 'RedHat' %}
+    {% elif salt.grains.get('os_famil') == 'RedHat' %}
     -name: httpd
     {% endif %}
 start_apache:
   service.running:
     {% if salt.grains.get('os_famil') == 'Debian' %}
     - name: apache2
-    {% if salt.grains.get('os_famil') == 'RedHat' %}
+    {% elif salt.grains.get('os_famil') == 'RedHat' %}
     -name: httpd
     {% endif %}
     - enable: True
