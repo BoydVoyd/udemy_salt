@@ -1,4 +1,4 @@
-{% set lookup ={
+{% set lookup = {
     'jerry': "Jerry's World",
     'stewart': "Stewart's World", 
     'master': "Master's World", 
