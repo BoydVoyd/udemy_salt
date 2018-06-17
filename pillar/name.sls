@@ -1,7 +1,9 @@
-{% if grains.id == 'jerry' %}
-name: Jerry's world
-{% if grains.id == 'stewart' %}
-name: Stewart's world
-{% if grains.id == 'master' %}
-name: Master's world
-{% endif %}
+{% set lookup ={
+    'jerry': "Jerry's World"
+    'stewart': "Stewart's World" 
+    'master': "Master's World" 
+}%}
+
+{% set name = lookup[grains.id] %}
+
+name: {{ name | json() }}
