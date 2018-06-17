@@ -1,4 +1,4 @@
-{% set name = salt.pillar.get(name) %}
+{% set name = salt.pillar.get('name') %}
 
 welcome_page:
   file.managed: 
