@@ -3,7 +3,7 @@
 check_pillar_values:
   test.check_pillar:
     - present:
-      - name
+      - nameX
     - failhard: True
 
 welcome_page:
