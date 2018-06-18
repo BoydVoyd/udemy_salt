@@ -10,3 +10,5 @@ start_apache:
   service.running:
     - name: {{ apache.pkg }}
     - enable: True
+    - require:
+      - pkg: install_apache
